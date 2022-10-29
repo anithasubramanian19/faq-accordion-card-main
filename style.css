@@ -1,0 +1,232 @@
+:root{
+    --clr-click:  hsl(238, 29%, 16%);
+    --clr-hover: hsl(14, 88%, 65%);
+    --clr-dark: hsl(237, 12%, 33%);
+    --clr-light:hsl(240, 6%, 50%);
+    --clr-card:hsl(240, 5%, 91%);
+    --fs:12px;
+    --fw-regular:400;
+    --fw-bold:700;
+}
+
+
+body{
+    font-family: 'Kumbh Sans', sans-serif;
+    background-image: linear-gradient(to top,  hsl(273, 75%, 66%),   hsl(240, 73%, 65%));
+  
+}  
+main{
+    display: grid;
+    min-height: 100vh;
+    place-content: center;
+   
+}
+
+.qna{
+    margin-top: 8rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: min-content;
+    justify-content: center;
+    width: 400px;
+    background: var(--clr-card);
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    margin-bottom: 6rem;
+}
+
+h1{
+    font-weight: var(--fw-bold);
+    color: var(--clr-click);
+    
+}
+.dark{
+    cursor: pointer;
+    color: var(--clr-dark);
+    font-size: 15px;
+    text-align: left;
+    font-weight: var(--fw-regular);
+    margin-right: 1rem;
+    border: none;
+    text-decoration: none;
+    background-color: transparent;
+}
+.dark:hover{
+    color: var(--clr-hover);
+}
+.light{
+   
+    color: var(--clr-light);
+    font-size: var(--fs);
+    font-weight: var(--fw-regular);
+    width: 38ch;
+    margin-top: -.5rem;
+    text-align: left;
+    margin-right: 1rem;
+    
+}
+
+.hide{
+    display: none;
+}
+.image{
+    position: relative;
+}
+
+.woman-online{
+    position:absolute;
+    right: 30%;
+    bottom: 50%;
+    left: 0;
+    width: 100%;
+
+}
+.quest{
+    /* position: relative; */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    /* margin-left: -1rem; */
+    justify-content:first baseline;
+    margin-bottom: 2rem;
+}
+.line{
+    width: 330px;
+    height: 1px;
+    background:var(--clr-light);
+}
+
+
+.top{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    /* gap: 1rem; */
+    justify-content: center;
+}
+
+
+.third, .fourth{
+    margin-left: 4rem;
+}
+.fifth{
+    margin-left: 2rem;
+}
+.click{
+    transform: rotate(180deg);
+}
+.clear{
+    display: none;
+}
+@media (min-width:40em) {
+  
+    .hidden{
+        display: none;
+    }
+    .clear{
+        display: block;
+
+    }
+    .image{
+        position: relative;
+        margin-right: 3em;
+        margin-bottom: 1em;
+    }
+    .bg{
+        height: 200px;
+
+    }
+    .bg-women{
+        position: absolute;
+        top: 20%;
+        right: 30%;
+        bottom: 50%;
+        left: 0;
+        width: 200px;
+    }
+    .bg-i{
+        position: absolute;
+        width: 100px;
+        top: 45%;
+        right:  55%;
+    }
+    .qna{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        width: 600px;
+        height: 400px;
+    }
+    .quest{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: first baseline;
+        
+
+    }
+    .line{
+      width: 290px;
+      height: 1px;
+    }
+    .top{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+    .column{
+        display: flex;
+        flex-direction: column;
+        width: min-content;
+    }
+    h1{
+        font-weight: var(--fw-bold);
+        color: var(--clr-click);
+        font-size: 20px;
+        margin-bottom: 2em;
+        /* margin-top: 15rem; */
+    }
+    .dark{
+        cursor: pointer;
+        color: var(--clr-dark);
+        font-size: 12px;
+        text-align: left;
+        font-weight: var(--fw-regular);
+        /* margin-right: 1rem; */
+        border: none;
+        text-decoration: none;
+        width: 34ch;
+        background-color: transparent;
+        margin-top: -2em;
+    }
+    .dark:hover{
+        color: var(--clr-hover);
+    }
+    .light{
+       margin-top: -1rem;
+        color: var(--clr-light);
+        font-size: 12px;
+        font-weight: var(--fw-regular);
+        width: 34ch;
+        /* margin-top: -.5rem; */
+        text-align: justify;
+        /* margin-right: 1rem; */
+        
+    }
+    
+    .second, .first{
+        margin-left: 1rem;
+    }
+    .third, .fourth{
+        margin-left: 1rem;
+    }
+    .fifth{
+        margin-left: 1rem;
+    }
+   
+}
